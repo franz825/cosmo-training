@@ -1,7 +1,7 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Mon Sep 26 11:37:53 2022
-
 @author: nvandermaele
 """
 # Keep erosion fixed (try e.g. 1, 10 and 100 m/Myr)
@@ -43,4 +43,3 @@ for i in range(len(conc_plot)):
 plt.plot(age,conc_plot, 'o')
 plt.xlabel("Exposure age (Ma)")
 plt.ylabel('Concentration (10$^3$ at/g)')    
-    
