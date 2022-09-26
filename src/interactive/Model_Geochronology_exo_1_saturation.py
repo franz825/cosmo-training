@@ -85,11 +85,13 @@ display(crn_table)
 #%%
 
 # Coerce erosion rate as string and convert at/g to 10^3 at/g
+crn_plot["erosion_rate"] = crn_plot["erosion_rate"] * 10000
 crn_plot["erosion_rate"] = crn_plot["erosion_rate"].astype(str)
 crn_plot["crn_concentration"] = crn_plot["crn_concentration"] / 1000
 
 # Plot 10Be concentrations for various erosion rates 
-plot = px.scatter(crn_plot, x = "exposure_age", y = "crn_concentration", color = "erosion_rate", labels = dict(exposure_age = "Exposure age (Ma)", crn_concentration = "Concentration (10<sup>3</sup> at/g)", erosion_rate = "Erosion rate (cm /yr)"), log_x = True, log_y = True)
+plot = px.scatter(crn_plot, x = "exposure_age", y = "crn_concentration", color = "erosion_rate", labels = dict(exposure_age = "Exposure age (a)", 
+crn_concentration = "Concentration (10<sup>3</sup> at/g)", erosion_rate = "Erosion rate (m /Ma)"), log_x = True, log_y = True)
 plot.show()
 
 
