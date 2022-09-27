@@ -5,15 +5,8 @@ import numpy as np
 from scipy import stats
 import matplotlib as plt
 
-
-#import sys
-
-#nb_simus = int(sys.argv[-2])
-#name_output = str(sys.argv[-1])
-
-
-def mean(numbers):
-    return float(sum(numbers)) / max(len(numbers), 1)
+# def mean(numbers):
+#     return float(sum(numbers)) / max(len(numbers), 1)
 
 
 # OBSERVED DATA IMPLEMENTATION
@@ -31,19 +24,19 @@ depth_of_data = [100,170,230,300]
 # list defined to collect model outputs comparable (same depth) with observed [CRN]
 relevant_CRN_to_fit_reality_Be = []
 
-
+ 
 
 def Nash(observed_data, relevant_CRN_to_fit_reality_Be):  # computes the Nash Sutcliffe efficiency index
     # a list that will collect the difference between observed data and simulated ones (squared), numerator of NSE
     v = []
-    # a list thet will collect the difference between observed data and the mean observed data (squared), denominator of NSE
+    # a list that will collect the difference between observed data and the mean observed data (squared), denominator of NSE
     w = []
     for i in range(len(observed_data)):
         
         # variable taking difference value btn observed and simulated
         b = (observed_data[i]-relevant_CRN_to_fit_reality_Be[i])**2
         # variable taking difference value btn observed and mean(observed)
-        d = (observed_data[i]-mean(observed_data))**2
+        d = (observed_data[i]-np.mean(observed_data))**2
         # each difference (for each pair of points, one observed and one simulated), is transferred to list 'v'
         v.append(b)
         # each difference (between observed and mean of observations), is transferred to list 'w'

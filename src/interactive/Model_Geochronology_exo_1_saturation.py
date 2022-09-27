@@ -35,12 +35,13 @@ def conc_surf(erosion_rate, t_exp):     # erosion rate is in cm/yr, conversion f
 erosion_rates = [0.000001, 0.0001, 0.001, 0.03]
 
 # Vector containing the exposure ages (yr) to process
-ages = [1000, 10000, 20000, 30000, 50000, 100000, 200000, 300000, 400000, 500000, 1000000]    
+exposure_ages = [1000, 2000, 5000, 10000, 20000, 30000, 50000, 100000, 200000, 300000, 400000, 500000, 1000000]    
+
 
 #%% Loop
 
 # Containers for 10Be concentrations results
-crn_table = pd.DataFrame({"exposure_age": ages})
+crn_table = pd.DataFrame({"exposure_age": exposure_ages})
 crn_plot = pd.DataFrame()
 
 # Loop within erosion rate values
@@ -50,13 +51,13 @@ for i in range(len(erosion_rates)):
     erosion_rate = erosion_rates[i]
 
     # Array to contain CRN concentration for each 
-    crn_concentrations = np.zeros(len(ages))
+    crn_concentrations = np.zeros(len(exposure_ages))
 
     # Loop within exposure age values
-    for i in range(len(ages)): 
+    for i in range(len(exposure_ages)): 
         
         # Get current exposure age
-        exposure_age = ages[i]
+        exposure_age = exposure_ages[i]
 
         # Compute 10Be concentration at the surface 
         Be_concentration = conc_surf(erosion_rate, exposure_age)
@@ -67,7 +68,7 @@ for i in range(len(erosion_rates)):
     # Convert array of concentrations in a named serie
     crn_concentrations = pd.Series(crn_concentrations, name = "crn_conc_erate_" + str(erosion_rate), dtype = 'Float64')
     # Include array of concentrations in a complete dataframe
-    crn_df = pd.DataFrame({"exposure_age": ages, "crn_concentration": crn_concentrations, "erosion_rate": pd.Series(np.repeat(erosion_rate, len(ages)))})
+    crn_df = pd.DataFrame({"exposure_age": exposure_ages, "crn_concentration": crn_concentrations, "erosion_rate": pd.Series(np.repeat(erosion_rate, len(exposure_ages)))})
 
     # Collect concentrations formatted for plots
     crn_plot = pd.concat([crn_plot, crn_df], axis = 0)
@@ -77,7 +78,7 @@ for i in range(len(erosion_rates)):
 #%% Write ouputs to files
 
 # Write results to csv file
-crn_table.to_csv("exposure_ages.csv")
+crn_table.to_csv("exposure_exposure_ages.csv")
 
 # Print the table containing 10Be concentration for each exposure age
 display(crn_table)
@@ -99,7 +100,7 @@ plot.show()
 # for i in range(len(crn_concentrations)):
 #     crn_concentrations[i] = crn_concentrations[i]/1000
     
-# plt.plot(ages, crn_concentrations, 'o')
+# plt.plot(exposure_ages, crn_concentrations, 'o')
 # plt.xlabel("Exposure age (Ma)")
 # plt.ylabel('Concentration (10$^3$ at/g)')    
     
