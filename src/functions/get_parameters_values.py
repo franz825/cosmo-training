@@ -1,11 +1,11 @@
 def get_parameters_values():
-    atn = 152                           # Attenuation length for neutrons, g/cm2
+    atn = 160                           # Attenuation length for neutrons, g/cm2
 
     # Production rate and production of 10Be (only neutrons)
     prod_rate = 1.00                    # Prod rate for the exercice
 
     # Independent constants
-    rho = 1.7                           # bulk density for sands
+    rho = 2.7                           # bulk density for sands
 
     # Lives and decays for 10Be
     half_life_Be10 = 1387000.0          # in years

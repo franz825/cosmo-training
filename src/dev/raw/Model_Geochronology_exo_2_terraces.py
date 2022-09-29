@@ -187,8 +187,8 @@ def Be_accumulator(t_exp, Erosion_cm, N_inh):
             arr_cntrlistfinal[(depth_of_data[i])])
 
     Nash_result = Nash(observed_data, relevant_CRN_to_fit_reality_Be)
-    print("Exposure age =", t_exp)
-    print ("Erosion =", Erosion_cm)
+    # print("Exposure age =", t_exp)
+    # print ("Erosion =", Erosion_cm)
     return relevant_CRN_to_fit_reality_Be    #
 
 
