@@ -1,6 +1,6 @@
 # Cosmo training
 
-All the information related to the Cosmo training session is available in a Github repository:
+All the information related to the Cosmo training session, that will take place on Thursday 06/10 at 11h00, is available in a Github repository:
 
 [https://github.com/franz825/cosmo-training/](https://github.com/franz825/cosmo-training/) OR [https://bit.ly/cosmo-training](https://bit.ly/cosmo-training)
 
