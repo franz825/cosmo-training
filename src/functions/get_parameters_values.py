@@ -11,6 +11,7 @@ def get_parameters_values():
     half_life_Be10 = 1387000.0          # in years
     L = 0.69314718056/half_life_Be10    # decay constant (lambda in most litterature)
 
+    # Gather parameters in a dictionary
     parameters = {
         "atn": atn,
         "prod_rate": prod_rate,
@@ -19,4 +20,5 @@ def get_parameters_values():
         "L": L
     }
 
+    # Return dictionary
     return parameters
