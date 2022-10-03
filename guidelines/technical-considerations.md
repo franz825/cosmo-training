@@ -16,9 +16,13 @@ Jupyter notebooks (`.ipynb` file extension) are text files containing a mix of t
 The easiest way to read and interpret Jupyter notebooks in the frame of this Cosmo Training sesssion is to use the "Google Colaboratory" (or Google Colab) interface, available [here](https://colab.research.google.com). This web interface enables you to interpret Jupyter Notebooks in an online and interactive environment. Each notebook can be directly opened in Google Colab, as follows:
 
 1. Open the Google Colab interface in your browser: [https://colab.research.google.com/](https://colab.research.google.com/).
+
 2. In the Menu box, click on the `Github` tab.
+
 3. Copy the URL of this repository: [https://github.com/franz825/cosmo-training](https://github.com/franz825/cosmo-training).
+
 4. And paste it in the `Enter a Github URL` field. Hit `Enter`.
+
 5. Notebooks available in the repository appear below in the box. Simply click on the appropriate `.ipynb` file to open it.
 
 ![Connect to the repository](imgs/colab-open-notebook.png)

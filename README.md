@@ -15,3 +15,8 @@ Read carefully the document "Technical considerations" available [here](guidelin
 ### During the training session
 
 During the training session, browse the different notebooks available the `src` directory. Notebooks are numbered: `1_XXX`, `2_XXX`. So, follow the proper sequence.
+
+## Contact
+
+- François Clapuyt ([francois.clapuyt@uclouvain.be](francois.clapuyt@uclouvain.be))
+- Nathan Vandermaelen ([nathan.vandermaelen@uclouvain.be](nathan.vandermaelen@uclouvain.be))
