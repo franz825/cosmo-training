@@ -33,7 +33,7 @@ To run a code cell, click on the `Play` button in the upper left corner of the c
 
 If you do not have a Google account to connect to Google Colab (and do not want to create one), you can run a [Anaconda](https://www.anaconda.com/) environment locally on your machine, to interpret Jupyter Notebooks.
 
-The Anaconda environment is available for Windows, MacOS and Linux. The installation should be pretty straightforward as it is available as graphical installers. However, the installation files are pretty big (ca. 500 Mo !). So please plan ahead this technical step, for which we do not provide assistance as it is not the goal of the training course.
+The Anaconda environment is available for Windows, MacOS and Linux. The installation should be pretty straightforward as it is available as graphical installer. However, the installation files are pretty big (ca. 500 Mo !). So please plan ahead this technical step, for which we do not provide assistance as it is not the goal of the training course.
 
 Once the installation process is done:
 
