@@ -9,7 +9,7 @@ Jupyter notebooks (`.ipynb` file extension) are text files containing a mix of t
 - Text cells, which simply contain text, formattted in [Markdown](https://www.markdownguide.org/).
 - Code cells, which contain Python code, that you can execute interactively.
 
-![Run a code cell](guidelines/imgs/colab-first-notebook.png)
+![Run a code cell](imgs/colab-first-notebook.png)
 
 ## Interactive environment
 
@@ -21,7 +21,7 @@ The easiest way to read and interpret Jupyter notebooks in the frame of this Cos
 4. And paste it in the `Enter a Github URL` field. Hit `Enter`.
 5. Notebooks available in the repository appear below in the box. Simply click on the appropriate `.ipynb` file to open it.
 
-![Connect to the repository](guidelines/imgs/colab-open-notebook.png)
+![Connect to the repository](imgs/colab-open-notebook.png)
 
 To run a code cell, click on the `Play` button in the upper left corner of the cell, or hit `Ctrl + Enter`.
 
@@ -35,11 +35,11 @@ Once the installation process is done:
 
 1. Open Anaconda and lauch the Jupyter Notebook application.
 
-![Anaconda environment](guidelines/imgs/anaconda-environment.png)
+![Anaconda environment](imgs/anaconda-environment.png)
 
 2. In a dedicated directory on your machine, download the current Github repository from this [link](https://github.com/franz825/cosmo-training/zipball/master/) or by saving the `.zip` file as depicted below:
 
-![Download Github repository](guidelines/imgs/download-repository.png)
+![Download Github repository](imgs/download-repository.png)
 
 3. Unzip the archive.
 
