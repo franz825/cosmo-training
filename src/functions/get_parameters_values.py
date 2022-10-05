@@ -9,7 +9,7 @@ def get_parameters_values():
 
     # Lives and decays for 10Be
     half_life_Be10 = 1387000.0          # in years
-    L = 0.69314718056/half_life_Be10    # decay constant (lambda in most litterature)
+    L = 0.69314718056/half_life_Be10    # decay constant (lambda in most literature) == ln(2)/half-life
 
     # Gather parameters in a dictionary
     parameters = {
