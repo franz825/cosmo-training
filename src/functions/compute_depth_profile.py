@@ -45,7 +45,7 @@ def be_accumulator(concentrations_observed, depths_observed, t_exp, erosion_cm, 
     Pfm = 0.00490  # relative contribution of fast muons for Be (unitless)
 
     # Production rate and production of 10Be
-    Prod_rate = 1.00                   # Prod rate for the exercice
+    Prod_rate = parameters['prod_rate']                   # Prod rate for the exercice
     # Production of neutrons (at/g/yr) via spallation
     Prod_n = Prod_rate*Pn
     Prod_nm = Prod_rate*Pnm            # Production of negative muons (at/g/yr)
