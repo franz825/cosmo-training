@@ -33,7 +33,7 @@ def be_accumulator(concentrations_observed, depths_observed, t_exp, erosion_cm, 
     extent_profile = 5000
 
     # ATTENUATION LENGTHS OF PRODUCTION PATHWAYS
-    Atn = 160                         # Attenuation length for neutrons, g/cm2
+    Atn = parameters["atn"]                         # Attenuation length for neutrons, g/cm2
     Atnm = 1500                       # Attenuation length for negative muons, g/cm2
     Atfm = 4320                       # Attenuation length for fast muons, g/cm2
 
