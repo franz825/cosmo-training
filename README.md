@@ -20,3 +20,7 @@ During the training session, browse the different notebooks available the `src` 
 
 - François Clapuyt ([francois.clapuyt@uclouvain.be](francois.clapuyt@uclouvain.be))
 - Nathan Vandermaelen ([nathan.vandermaelen@uclouvain.be](nathan.vandermaelen@uclouvain.be))
+
+```
+bloc de code
+```
